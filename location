@@ -341,7 +341,10 @@
 <section id="location">
   <div class="wrap loc-grid">
     <div>
-      <div class="map-box"><div class="pin"></div></div>
+      <a href="https://maps.app.goo.gl/hM81vWMAyw7aT6mu5" target="_blank" rel="noopener" class="map-box" style="text-decoration:none; display:block;">
+        <div class="pin"></div>
+        <div class="mono" style="position:absolute; bottom:16px; left:16px; color:var(--clay);">Open in Google Maps →</div>
+      </a>
     </div>
     <div>
       <div class="section-head" style="margin-bottom:0;">
@@ -350,6 +353,7 @@
       </div>
       <p style="color:rgba(38,36,31,0.75); max-width:480px; margin-bottom:8px;">Set in the prestigious south of Cali, Villa Gerona offers the best of both worlds — quiet, green, and rural, but just minutes from the city's best shopping, dining, and nature escapes.</p>
       <ul class="loc-list">
+        <li><span>Get directions</span><span><a href="https://maps.app.goo.gl/hM81vWMAyw7aT6mu5" target="_blank" rel="noopener" style="color:var(--clay); text-decoration:underline;">Open in Google Maps →</a></span></li>
         <li><span>Shopping (Holguines, Jardín Plaza, Unicentro)</span><span>15–20 min</span></li>
         <li><span>Club Campestre de Cali</span><span>10 min</span></li>
         <li><span>Ciudad Jardín &amp; Pance dining</span><span>15 min</span></li>
