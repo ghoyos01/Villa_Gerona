@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Villa Gerona — Finca Rural, Vía a La Buitrera, Cali</title>
+<title>Villa Gerona — Country House, Vía a La Buitrera, Cali</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Karla:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -113,8 +113,8 @@
   .gate-bars span{width:2px; background:rgba(243,237,225,0.28); height:100%;}
   .gate-name{
     position:absolute; top:38%; left:50%; transform:translate(-50%,-50%); z-index:3;
-    font-family:'Cormorant Garamond', serif; font-size:2.6rem; letter-spacing:0.14em;
-    color:rgba(243,237,225,0.92); text-align:center; font-weight:600;
+    font-family:'Cormorant Garamond', serif; font-size:2rem; letter-spacing:0.1em;
+    color:rgba(243,237,225,0.92); text-align:center; font-weight:600; white-space:nowrap;
   }
   .gate-tag{
     position:absolute; bottom:18px; left:18px; z-index:3;
@@ -158,24 +158,20 @@
   .amen h3{font-size:1.15rem; margin-bottom:8px; color:var(--palm-dark); font-weight:600;}
   .amen p{color:rgba(38,36,31,0.68); font-size:0.94rem;}
 
-  .gallery-grid{display:grid; grid-template-columns:repeat(6,1fr); grid-auto-rows:130px; gap:10px;}
-  .g{position:relative; overflow:hidden; display:flex; align-items:flex-end; padding:14px;}
-  .g span{color:rgba(243,237,225,0.9);}
-  .g{background-size:cover; background-position:center;}
-  .g::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 55%, rgba(20,18,14,0.55) 100%); pointer-events:none;}
-  .g span{position:relative; z-index:1;}
-  .g1{grid-column:span 3; grid-row:span 2; background-image:url('images/master-bedroom-1.jpg');}
-  .g2{grid-column:span 3; grid-row:span 1; background-image:url('images/master-bedroom-2.jpg');}
-  .g3{grid-column:span 3; grid-row:span 1; background:linear-gradient(135deg,#6f8265,#3a4f34);}
-  .g4{grid-column:span 2; grid-row:span 1; background-image:url('images/master-bath-3.jpg');}
-  .g5{grid-column:span 2; grid-row:span 1; background-image:url('images/grounds-terrace.jpg');}
-  .g6{grid-column:span 2; grid-row:span 1; background-image:url('images/patio-bbq-1.jpg');}
-  .g7{grid-column:span 3; grid-row:span 1; background-image:url('images/master-bath-2.jpg');}
-  .g8{grid-column:span 3; grid-row:span 1; background-image:url('images/master-bath-1.jpg');}
-  .g9{grid-column:span 3; grid-row:span 1; background-image:url('images/patio-bbq-2.jpg');}
-  .g10{grid-column:span 3; grid-row:span 1; background-image:url('images/gated-entrance.jpg');}
-  .g11{grid-column:span 3; grid-row:span 1; background-image:url('images/exterior-facade.jpg');}
-  .g12{grid-column:span 3; grid-row:span 1; background-image:url('images/exterior-driveway.jpg');}
+  /* Categorized gallery */
+  .gallery-category{margin-bottom:56px;}
+  .gallery-category:last-child{margin-bottom:0;}
+  .category-title{
+    font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.4rem;
+    color:var(--palm-dark); margin-bottom:18px; display:flex; align-items:center; gap:12px;
+  }
+  .category-title::after{content:""; flex:1; height:1px; background:var(--line);}
+  .photo-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;}
+  .photo-grid img{
+    width:100%; height:auto; display:block; border-radius:3px; border:1px solid var(--line);
+    object-fit:contain; background:var(--stone);
+  }
+  .category-empty{color:rgba(38,36,31,0.5); font-size:0.9rem; font-style:italic;}
 
   .loc-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;}
   .map-box{
@@ -218,9 +214,6 @@
     .stats .wrap{grid-template-columns:repeat(2,1fr);}
     .amen-grid{grid-template-columns:1fr;}
     .navlinks{display:none;}
-    .gallery-grid{grid-template-columns:repeat(2,1fr); grid-auto-rows:110px;}
-    .g1{grid-column:span 2;}
-    .g2,.g3,.g4,.g5,.g6{grid-column:span 1;}
   }
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} .btn:hover{transform:none;} }
 </style>
@@ -231,7 +224,7 @@
   <nav class="wrap">
     <div class="brand"><div class="brand-mark"></div>Villa Gerona</div>
     <div class="navlinks">
-      <a href="#story">The Finca</a>
+      <a href="#story">The House</a>
       <a href="#amenities">Amenities</a>
       <a href="#gallery">Gallery</a>
       <a href="#location">Location</a>
@@ -244,16 +237,16 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow mono">Rural finca · Vía a La Buitrera, Cali</div>
-      <h1>A gated finca<br><em>where the valley</em><br>meets the mountains.</h1>
+      <div class="eyebrow mono">Rural Country House · Vía a La Buitrera, Cali</div>
+      <h1>A gated Country House<br><em>where the valley</em><br>meets the mountains.</h1>
       <p class="lead">A peaceful retreat where the tranquility of the countryside meets the convenience of being close to everything the vibrant south of Cali offers. Perfect for families, groups of friends, or business travelers — with the warm climate, lush greenery, and easy access to the "Sucursal del Cielo" right outside the door.</p>
       <div class="hero-actions">
         <a href="#book" class="btn btn-primary">Check Availability →</a>
-        <a href="#story" class="btn btn-ghost">See the Finca</a>
+        <a href="#story" class="btn btn-ghost">See the Country House</a>
       </div>
     </div>
     <div class="gate">
-      <div class="gate-name">GERONA</div>
+      <div class="gate-name">VILLA GERONA</div>
     </div>
   </div>
 </section>
@@ -270,12 +263,12 @@
 <section class="story" id="story">
   <div class="wrap">
     <div class="section-head">
-      <span class="mono">The Finca</span>
+      <span class="mono">The House</span>
       <h2>Built for the countryside, finished like a home.</h2>
     </div>
     <div class="story-grid">
       <div>
-        <p>Villa Gerona is a rural tourist finca set in the green hills along Vía a La Buitrera, just outside Cali. Enjoy four levels of comfort, Samsung tech in every room, and top-tier security — a rustic, cozy design with wide open spaces, plenty of natural light, and a decor that invites relaxation.</p>
+        <p>Villa Gerona is a rural tourist country house set in the green hills along Vía a La Buitrera, just outside Cali. Enjoy four levels of comfort, Samsung tech in every room, and top-tier security — a rustic, cozy design with wide open spaces, plenty of natural light, and a decor that invites relaxation.</p>
         <p>Every bedroom and open space features large windows fitted with screens (anjeos), letting a gentle breeze move through the house all day. They close fully on cooler nights, keeping things warm and quiet. Inside, every detail was custom-built: paneled interior doors, moisture-resistant carpentry, and quartz countertops chosen for both quality and durability.</p>
         <div class="badge-row">
           <div class="badge"><span class="dot"></span><span class="mono">RNT Registered</span></div>
@@ -285,7 +278,7 @@
       </div>
       <div class="story-facts">
         <div class="fact"><span class="mono">Location</span><div class="val">Km 5, Vía a La Buitrera, Cali, Colombia</div></div>
-        <div class="fact"><span class="mono">Property type</span><div class="val">Rural tourist finca / country villa</div></div>
+        <div class="fact"><span class="mono">Property type</span><div class="val">Rural tourist Country House / country villa</div></div>
         <div class="fact"><span class="mono">Bedrooms & Bathrooms</span><div class="val">4 bedrooms · updated bathrooms</div></div>
         <div class="fact"><span class="mono">Registration</span><div class="val">RNT No. 263647</div></div>
       </div>
@@ -319,29 +312,68 @@
   <div class="wrap">
     <div class="section-head">
       <span class="mono">Gallery</span>
-      <h2>A first look.</h2>
+      <h2>A room-by-room look.</h2>
     </div>
-    <div class="gallery-grid">
-      <div class="g g1"><span class="mono">Master bedroom</span></div>
-      <div class="g g2"><span class="mono">Master bedroom</span></div>
-      <div class="g g3"><span class="mono">Kitchen</span></div>
-      <div class="g g4"><span class="mono">Master bathroom</span></div>
-      <div class="g g5"><span class="mono">Grounds &amp; terrace</span></div>
-      <div class="g g6"><span class="mono">Patio &amp; BBQ area</span></div>
-      <div class="g g7"><span class="mono">Master bathroom · shower</span></div>
-      <div class="g g8"><span class="mono">Master bathroom</span></div>
-      <div class="g g9"><span class="mono">Patio &amp; BBQ area</span></div>
-      <div class="g g10"><span class="mono">Gated entrance</span></div>
-      <div class="g g11"><span class="mono">Exterior</span></div>
-      <div class="g g12"><span class="mono">Driveway</span></div>
+
+    <div class="gallery-category">
+      <div class="category-title">Master Bedroom</div>
+      <div class="photo-grid">
+        <img src="images/master-bedroom-1.jpg" alt="Master bedroom">
+        <img src="images/master-bedroom-2.jpg" alt="Master bedroom">
+      </div>
     </div>
+
+    <div class="gallery-category">
+      <div class="category-title">Master Bathroom</div>
+      <div class="photo-grid">
+        <img src="images/master-bath-3.jpg" alt="Master bathroom vanity">
+        <img src="images/master-bath-2.jpg" alt="Master bathroom shower">
+        <img src="images/master-bath-1.jpg" alt="Master bathroom">
+      </div>
+    </div>
+
+    <div class="gallery-category">
+      <div class="category-title">Kitchen</div>
+      <div class="photo-grid">
+        <p class="category-empty">Photos coming soon.</p>
+      </div>
+    </div>
+
+    <div class="gallery-category">
+      <div class="category-title">Patio &amp; BBQ Area</div>
+      <div class="photo-grid">
+        <img src="images/patio-bbq-1.jpg" alt="Patio and BBQ area">
+        <img src="images/patio-bbq-2.jpg" alt="Patio and BBQ area">
+      </div>
+    </div>
+
+    <div class="gallery-category">
+      <div class="category-title">Grounds &amp; Terrace</div>
+      <div class="photo-grid">
+        <img src="images/grounds-terrace.jpg" alt="Grounds and terrace">
+      </div>
+    </div>
+
+    <div class="gallery-category">
+      <div class="category-title">Exterior &amp; Entrance</div>
+      <div class="photo-grid">
+        <img src="images/exterior-house.jpg" alt="Exterior of the house">
+        <img src="images/gated-entrance.jpg" alt="Gated entrance">
+        <img src="images/exterior-facade.jpg" alt="Exterior facade">
+        <img src="images/exterior-driveway.jpg" alt="Driveway">
+      </div>
+    </div>
+
   </div>
 </section>
 
 <section id="location">
   <div class="wrap loc-grid">
     <div>
-      <div class="map-box"><div class="pin"></div></div>
+      <a href="https://maps.app.goo.gl/hM81vWMAyw7aT6mu5" target="_blank" rel="noopener" class="map-box" style="text-decoration:none; display:block;">
+        <div class="pin"></div>
+        <div class="mono" style="position:absolute; bottom:16px; left:16px; color:var(--clay);">Open in Google Maps →</div>
+      </a>
     </div>
     <div>
       <div class="section-head" style="margin-bottom:0;">
@@ -350,6 +382,7 @@
       </div>
       <p style="color:rgba(38,36,31,0.75); max-width:480px; margin-bottom:8px;">Set in the prestigious south of Cali, Villa Gerona offers the best of both worlds — quiet, green, and rural, but just minutes from the city's best shopping, dining, and nature escapes.</p>
       <ul class="loc-list">
+        <li><span>Get directions</span><span><a href="https://maps.app.goo.gl/hM81vWMAyw7aT6mu5" target="_blank" rel="noopener" style="color:var(--clay); text-decoration:underline;">Open in Google Maps →</a></span></li>
         <li><span>Shopping (Holguines, Jardín Plaza, Unicentro)</span><span>15–20 min</span></li>
         <li><span>Club Campestre de Cali</span><span>10 min</span></li>
         <li><span>Ciudad Jardín &amp; Pance dining</span><span>15 min</span></li>
@@ -404,7 +437,7 @@
     </div>
     <div class="contact-info">
       <div class="item"><span class="mono">Email</span><div class="val">stay@villagerona.com</div></div>
-      <div class="item"><span class="mono">Phone</span><div class="val">[Your phone number]</div></div>
+      <div class="item"><span class="mono">WhatsApp</span><div class="val"><a href="https://wa.me/19545575575" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Gerry · +1 954-557-5575</a></div></div>
       <div class="item"><span class="mono">Address</span><div class="val">Km 5, Vía a La Buitrera<br>Cali, Valle del Cauca, Colombia</div></div>
     </div>
   </div>
