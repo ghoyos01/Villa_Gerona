@@ -8,16 +8,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Karla:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --palm:#3b5a73;
-    --palm-dark:#28425a;
-    --clay:#6f9dc2;
-    --clay-dark:#4f7d9f;
-    --stone:#eef3f7;
-    --stone-light:#f8fafc;
-    --gold:#a9c9e0;
-    --ink:#23303c;
-    --moss:#7690a3;
-    --line: rgba(35,48,60,0.14);
+    --palm:#2e4a35;
+    --palm-dark:#1e3324;
+    --clay:#b5602f;
+    --clay-dark:#8c4620;
+    --stone:#f3ede1;
+    --stone-light:#faf7f0;
+    --gold:#a8863f;
+    --ink:#26241f;
+    --moss:#6f8265;
+    --line: rgba(38,36,31,0.14);
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
@@ -64,12 +64,12 @@
   .brand-mark::before{
     content:""; position:absolute; inset:5px; border:1px solid var(--clay);
   }
-  .navlinks{display:flex; gap:8px; align-items:center;}
+  .navlinks{display:flex; gap:34px; align-items:center;}
   .navlinks a{
-    text-decoration:none; font-size:0.9rem; color:#000; opacity:1; font-weight:700;
-    padding:9px 14px; border-radius:4px; transition:background 0.2s;
+    text-decoration:none; font-size:0.92rem; color:var(--ink); opacity:0.72;
+    transition:opacity 0.2s;
   }
-  .navlinks a:hover{background:rgba(0,0,0,0.06);}
+  .navlinks a:hover{opacity:1;}
   .nav-cta{
     background:var(--clay); color:var(--stone-light) !important; opacity:1 !important;
     padding:10px 20px; font-size:0.85rem !important;
@@ -84,7 +84,7 @@
     font-size:clamp(2.7rem, 5vw, 4.2rem); line-height:1.04; color:var(--palm-dark); font-weight:600;
   }
   .hero h1 em{font-style:italic; color:var(--clay); font-weight:500;}
-  .hero p.lead{margin-top:22px; max-width:460px; font-size:1.1rem; color:rgba(35,48,60,0.75);}
+  .hero p.lead{margin-top:22px; max-width:460px; font-size:1.1rem; color:rgba(38,36,31,0.75);}
   .hero-actions{display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;}
   .btn{
     display:inline-flex; align-items:center; gap:8px; padding:14px 26px;
@@ -99,26 +99,26 @@
   /* gate hero visual */
   .gate{
     position:relative; aspect-ratio:4/5; overflow:hidden;
-    background-image:url('images/front-of-house-night.jpg'); background-size:cover; background-position:center;
+    background-image:url('images/exterior-house.jpg'); background-size:cover; background-position:center;
     border:1px solid var(--line);
   }
   .gate::before{
     content:""; position:absolute; inset:0;
-    background:linear-gradient(180deg, rgba(35,72,99,0.05) 0%, rgba(20,18,14,0.55) 100%);
+    background:linear-gradient(180deg, rgba(30,51,36,0.05) 0%, rgba(20,18,14,0.55) 100%);
   }
   .gate-bars{
     position:absolute; inset:0; z-index:2;
     display:flex; justify-content:space-evenly;
   }
-  .gate-bars span{width:2px; background:rgba(234,242,248,0.28); height:100%;}
+  .gate-bars span{width:2px; background:rgba(243,237,225,0.28); height:100%;}
   .gate-name{
     position:absolute; top:38%; left:50%; transform:translate(-50%,-50%); z-index:3;
     font-family:'Cormorant Garamond', serif; font-size:2rem; letter-spacing:0.1em;
-    color:rgba(234,242,248,0.92); text-align:center; font-weight:600; white-space:nowrap;
+    color:rgba(243,237,225,0.92); text-align:center; font-weight:600; white-space:nowrap;
   }
   .gate-tag{
     position:absolute; bottom:18px; left:18px; z-index:3;
-    background:rgba(35,48,60,0.55); color:var(--stone-light);
+    background:rgba(38,36,31,0.55); color:var(--stone-light);
     padding:7px 12px; backdrop-filter:blur(3px);
   }
 
@@ -138,16 +138,16 @@
   .story .section-head .mono{color:var(--gold);}
   .story .section-head h2{color:var(--stone-light);}
   .story-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px;}
-  .story-grid p{color:rgba(234,242,248,0.85); margin-bottom:18px; max-width:480px;}
-  .story-facts{border-left:1px solid rgba(234,242,248,0.25); padding-left:36px;}
-  .fact{padding:18px 0; border-bottom:1px solid rgba(234,242,248,0.15);}
+  .story-grid p{color:rgba(243,237,225,0.85); margin-bottom:18px; max-width:480px;}
+  .story-facts{border-left:1px solid rgba(243,237,225,0.25); padding-left:36px;}
+  .fact{padding:18px 0; border-bottom:1px solid rgba(243,237,225,0.15);}
   .fact:last-child{border-bottom:none;}
   .fact .mono{color:var(--gold); display:block; margin-bottom:6px;}
   .fact .val{font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:500;}
 
   .badge-row{display:flex; gap:14px; margin-top:28px; flex-wrap:wrap;}
   .badge{
-    border:1px solid rgba(234,242,248,0.3); padding:8px 14px; display:flex; align-items:center; gap:8px;
+    border:1px solid rgba(243,237,225,0.3); padding:8px 14px; display:flex; align-items:center; gap:8px;
   }
   .badge .dot{width:6px; height:6px; border-radius:50%; background:var(--gold);}
 
@@ -156,7 +156,7 @@
   .amen .glyph{width:36px; height:36px; border:1.5px solid var(--palm); margin-bottom:18px; position:relative; transform:rotate(45deg);}
   .amen .glyph::before{content:""; position:absolute; inset:6px; border:1px solid var(--palm);}
   .amen h3{font-size:1.15rem; margin-bottom:8px; color:var(--palm-dark); font-weight:600;}
-  .amen p{color:rgba(35,48,60,0.68); font-size:0.94rem;}
+  .amen p{color:rgba(38,36,31,0.68); font-size:0.94rem;}
 
   /* Categorized gallery */
   .gallery-category{margin-bottom:56px;}
@@ -171,27 +171,27 @@
     width:100%; height:auto; display:block; border-radius:3px; border:1px solid var(--line);
     object-fit:contain; background:var(--stone);
   }
-  .category-empty{color:rgba(35,48,60,0.5); font-size:0.9rem; font-style:italic;}
+  .category-empty{color:rgba(38,36,31,0.5); font-size:0.9rem; font-style:italic;}
 
   .loc-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;}
   .map-box{
     aspect-ratio:1/1; border:1px solid var(--line); position:relative;
     background:
-      repeating-linear-gradient(0deg, rgba(111,157,194,0.1) 0 1px, transparent 1px 40px),
-      repeating-linear-gradient(90deg, rgba(111,157,194,0.1) 0 1px, transparent 1px 40px),
+      repeating-linear-gradient(0deg, rgba(181,96,47,0.08) 0 1px, transparent 1px 40px),
+      repeating-linear-gradient(90deg, rgba(181,96,47,0.08) 0 1px, transparent 1px 40px),
       var(--stone);
   }
   .pin{position:absolute; top:44%; left:52%; width:14px; height:14px; background:var(--clay); border-radius:50% 50% 50% 0; transform:rotate(-45deg);}
   .loc-list{list-style:none; margin-top:22px;}
   .loc-list li{padding:14px 0; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; font-size:0.95rem;}
-  .loc-list li span:first-child{color:rgba(35,48,60,0.6);}
+  .loc-list li span:first-child{color:rgba(38,36,31,0.6);}
 
   .cta{background:var(--ink); color:var(--stone-light); text-align:center;}
   .cta h2{color:var(--stone-light); font-size:clamp(2.1rem,4vw,3.1rem); max-width:680px; margin:0 auto 22px; font-weight:600;}
-  .cta p{color:rgba(234,242,248,0.7); max-width:500px; margin:0 auto 36px;}
+  .cta p{color:rgba(243,237,225,0.7); max-width:500px; margin:0 auto 36px;}
   .cta .btn-primary{background:var(--gold);}
-  .cta .btn-primary:hover{background:#3d6484;}
-  .rate-note{margin-top:22px; color:rgba(234,242,248,0.5); font-size:0.85rem;}
+  .cta .btn-primary:hover{background:#8c6e30;}
+  .rate-note{margin-top:22px; color:rgba(243,237,225,0.5); font-size:0.85rem;}
 
   .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px;}
   form{display:flex; flex-direction:column; gap:16px;}
@@ -206,7 +206,7 @@
   .contact-info .mono{color:var(--clay); display:block; margin-bottom:6px;}
   .contact-info .val{font-size:1.15rem; font-family:'Cormorant Garamond',serif; font-weight:500;}
 
-  footer{background:var(--palm-dark); color:rgba(234,242,248,0.65); padding:40px 0; font-size:0.85rem;}
+  footer{background:var(--palm-dark); color:rgba(243,237,225,0.65); padding:40px 0; font-size:0.85rem;}
   footer .wrap{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;}
 
   @media (max-width: 860px){
@@ -222,7 +222,7 @@
 
 <header>
   <nav class="wrap">
-    <div class="brand"><img src="images/welcome-logo.jpg" alt="Welcome to Villa Gerona" style="height:60px; width:auto; border-radius:4px;"></div>
+    <div class="brand"><img src="images/logo.png" alt="Villa Gerona" style="height:52px; width:auto;"></div>
     <div class="navlinks">
       <a href="#story">The House</a>
       <a href="#amenities">Amenities</a>
@@ -238,7 +238,7 @@
   <div class="wrap hero-grid">
     <div>
       <div class="eyebrow mono">Rural Country House · Vía a La Buitrera, Cali</div>
-      <h1><em>Villa Gerona</em><br>where the valley<br>meets the mountains.</h1>
+      <h1>A gated Country House<br><em>where the valley</em><br>meets the mountains.</h1>
       <p class="lead">A peaceful retreat where the tranquility of the countryside meets the convenience of being close to everything the vibrant south of Cali offers. Perfect for families, groups of friends, or business travelers — with the warm climate, lush greenery, and easy access to the "Sucursal del Cielo" right outside the door.</p>
       <div class="hero-actions">
         <a href="#book" class="btn btn-primary">Check Availability →</a>
@@ -246,6 +246,7 @@
       </div>
     </div>
     <div class="gate">
+      <div class="gate-name">VILLA GERONA</div>
     </div>
   </div>
 </section>
@@ -383,7 +384,7 @@
         <span class="mono">Location</span>
         <h2>Countryside and city, at your fingertips.</h2>
       </div>
-      <p style="color:rgba(35,48,60,0.75); max-width:480px; margin-bottom:8px;">Set in the prestigious south of Cali, Villa Gerona offers the best of both worlds — quiet, green, and rural, but just minutes from the city's best shopping, dining, and nature escapes.</p>
+      <p style="color:rgba(38,36,31,0.75); max-width:480px; margin-bottom:8px;">Set in the prestigious south of Cali, Villa Gerona offers the best of both worlds — quiet, green, and rural, but just minutes from the city's best shopping, dining, and nature escapes.</p>
       <ul class="loc-list">
         <li><span>Get directions</span><span><a href="https://maps.app.goo.gl/hM81vWMAyw7aT6mu5" target="_blank" rel="noopener" style="color:var(--clay); text-decoration:underline;">Open in Google Maps →</a></span></li>
         <li><span>Shopping (Holguines, Jardín Plaza, Unicentro)</span><span>15–20 min</span></li>
@@ -404,10 +405,10 @@
     </div>
     <div class="story-grid">
       <div>
-        <p style="color:rgba(35,48,60,0.75); max-width:480px;">Guests have full, exclusive access to the entire property for the duration of their stay — every bedroom, bathroom, the living area, and the fully equipped kitchen, plus the private outdoor spaces: gardens, BBQ station, and lounge areas. Secure parking inside the gated estate fits up to 3 vehicles.</p>
+        <p style="color:rgba(38,36,31,0.75); max-width:480px;">Guests have full, exclusive access to the entire property for the duration of their stay — every bedroom, bathroom, the living area, and the fully equipped kitchen, plus the private outdoor spaces: gardens, BBQ station, and lounge areas. Secure parking inside the gated estate fits up to 3 vehicles.</p>
       </div>
       <div class="story-facts" style="border-left:1px solid var(--line); padding-left:36px;">
-        <div class="fact" style="border-bottom:1px solid var(--line);"><span class="mono" style="color:var(--clay);">A note on privacy</span><div class="val" style="font-size:0.95rem; font-family:'Karla',sans-serif; font-weight:400; color:rgba(35,48,60,0.75); line-height:1.6;">A maintenance staff member may briefly access the gardens or exterior at pre-scheduled times to keep the grounds beautiful — they will never enter the house without your permission.</div></div>
+        <div class="fact" style="border-bottom:1px solid var(--line);"><span class="mono" style="color:var(--clay);">A note on privacy</span><div class="val" style="font-size:0.95rem; font-family:'Karla',sans-serif; font-weight:400; color:rgba(38,36,31,0.75); line-height:1.6;">A maintenance staff member may briefly access the gardens or exterior at pre-scheduled times to keep the grounds beautiful — they will never enter the house without your permission.</div></div>
       </div>
     </div>
   </div>
@@ -448,7 +449,7 @@
 
 <div class="wrap" style="padding:36px 28px; border-top:1px solid var(--line);">
   <p class="mono" style="color:var(--clay); margin-bottom:8px;">Please note</p>
-  <p style="color:rgba(35,48,60,0.65); font-size:0.9rem; max-width:640px;">Due to its mountainside location and four-level design with steep stairs, the house unfortunately does not have accessibility accommodations for guests with reduced mobility or wheelchairs.</p>
+  <p style="color:rgba(38,36,31,0.65); font-size:0.9rem; max-width:640px;">Due to its mountainside location and four-level design with steep stairs, the house unfortunately does not have accessibility accommodations for guests with reduced mobility or wheelchairs.</p>
 </div>
 
 <footer>
