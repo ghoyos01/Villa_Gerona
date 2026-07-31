@@ -152,6 +152,15 @@
 
   .amen-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
   .amen{background:var(--stone-light); padding:34px 28px;}
+  .amen:nth-child(9n+1){background:#f4f7fa;}
+  .amen:nth-child(9n+2){background:#eef4f8;}
+  .amen:nth-child(9n+3){background:#f6f8f5;}
+  .amen:nth-child(9n+4){background:#f2f6f9;}
+  .amen:nth-child(9n+5){background:#f7f6f3;}
+  .amen:nth-child(9n+6){background:#eff3f7;}
+  .amen:nth-child(9n+7){background:#f5f7fa;}
+  .amen:nth-child(9n+8){background:#f1f5f4;}
+  .amen:nth-child(9n+9){background:#f6f7fb;}
   .amen h3{font-size:1.35rem; margin-bottom:8px; color:var(--palm-dark); font-weight:700;}
   .amen-icon{
     width:44px; height:44px; border-radius:10px; background:var(--stone);
