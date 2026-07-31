@@ -74,13 +74,14 @@
     background:var(--clay); color:var(--stone-light) !important; opacity:1 !important;
     padding:10px 20px; font-size:0.85rem !important;
   }
-  .lang-switch{display:flex; gap:4px; align-items:center;}
+  .lang-switch{display:flex; gap:6px; align-items:center;}
   .lang-flag{
-    font-size:1.25rem; text-decoration:none; padding:4px 6px; border-radius:4px;
-    filter:grayscale(0.5); opacity:0.6; transition:filter 0.2s, opacity 0.2s, background 0.2s; line-height:1;
+    display:flex; text-decoration:none; padding:4px; border-radius:6px;
+    filter:grayscale(0.6); opacity:0.55; transition:filter 0.2s, opacity 0.2s, background 0.2s;
   }
+  .lang-flag img{display:block; border-radius:3px; box-shadow:0 0 0 1px var(--line);}
   .lang-flag:hover{filter:grayscale(0); opacity:1; background:rgba(0,0,0,0.06);}
-  .lang-flag.active{filter:grayscale(0); opacity:1;}
+  .lang-flag.active{filter:grayscale(0); opacity:1; background:rgba(0,0,0,0.06);}
 
   /* HERO */
   .hero{position:relative; padding:70px 0 0; overflow:hidden;}
@@ -235,8 +236,8 @@
     <div style="display:flex; align-items:center; gap:16px;">
       <div class="brand"><img src="images/welcome-logo.jpg" alt="Welcome to Villa Gerona" style="height:60px; width:auto; border-radius:4px;"></div>
       <div class="lang-switch">
-        <a href="index.html" class="lang-flag active" title="English">🇺🇸</a>
-        <a href="index-es.html" class="lang-flag" title="Español">🇪🇸</a>
+        <a href="index.html" class="lang-flag active" title="English"><img src="https://flagcdn.com/24x18/us.png" width="24" height="18" alt="US"></a>
+        <a href="index-es.html" class="lang-flag" title="Español"><img src="https://flagcdn.com/24x18/es.png" width="24" height="18" alt="ES"></a>
       </div>
     </div>
     <div class="navlinks">
