@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Villa Gerona — Country House, Vía a La Buitrera, Cali</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Karla:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --palm:#3b5a73;
-    --palm-dark:#28425a;
-    --clay:#6f9dc2;
+    --palm-dark:#263f56;
+    --clay:#0b89ee;
     --clay-dark:#4f7d9f;
     --stone:#eef3f7;
     --stone-light:#f8fafc;
-    --gold:#a9c9e0;
-    --ink:#23303c;
+    --gold:#1192ee;
+    --ink:#01000a;
     --moss:#7690a3;
     --line: rgba(35,48,60,0.14);
   }
@@ -153,9 +153,12 @@
 
   .amen-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
   .amen{background:var(--stone-light); padding:34px 28px;}
-  .amen .glyph{width:36px; height:36px; border:1.5px solid var(--palm); margin-bottom:18px; position:relative; transform:rotate(45deg);}
-  .amen .glyph::before{content:""; position:absolute; inset:6px; border:1px solid var(--palm);}
   .amen h3{font-size:1.15rem; margin-bottom:8px; color:var(--palm-dark); font-weight:600;}
+  .amen-icon{
+    width:44px; height:44px; border-radius:10px; background:var(--stone);
+    display:flex; align-items:center; justify-content:center; margin-bottom:18px;
+  }
+  .amen-icon i{font-size:20px; color:var(--palm-dark);}
   .amen p{color:rgba(35,48,60,0.68); font-size:0.94rem;}
 
   /* Categorized gallery */
@@ -294,15 +297,15 @@
   </div>
   <div class="wrap">
     <div class="amen-grid">
-      <div class="amen"><div class="glyph"></div><h3>Spacious gardens</h3><p>Green areas throughout the grounds for games, lounging, and leisure.</p></div>
-      <div class="amen"><div class="glyph"></div><h3>BBQ / grill area</h3><p>A dedicated outdoor cookout station for unforgettable meals with family or friends.</p></div>
-      <div class="amen"><div class="glyph"></div><h3>Fully equipped kitchen</h3><p>Modern kitchen with everything you need, finished in quartz countertops and custom carpentry.</p></div>
-      <div class="amen"><div class="glyph"></div><h3>Wi-Fi &amp; workspace</h3><p>High-speed internet and designated workspaces for remote work or business travel.</p></div>
-      <div class="amen"><div class="glyph"></div><h3>Private, secure parking</h3><p>Ample parking inside the gated estate for up to 3 vehicles.</p></div>
-      <div class="amen"><div class="glyph"></div><h3>Screened windows</h3><p>Large windows with screens (anjeos) in every room — open for a breeze, close for cozy nights.</p></div>
-      <div class="amen"><div class="glyph"></div><h3>Four private bedrooms</h3><p>Each with a custom-built closet and quality paneled interior doors.</p></div>
-      <div class="amen"><div class="glyph"></div><h3>Monitored security</h3><p>PIR motion sensors and surveillance cameras covering the perimeter and key entry points.</p></div>
-      <div class="amen"><div class="glyph"></div><h3>Samsung tech throughout</h3><p>Modern appliances and electronics across all four levels of the home.</p></div>
+      <div class="amen"><div class="amen-icon"><i class="ti ti-leaf"></i></div><h3>Spacious gardens</h3><p>Green areas throughout the grounds for games, lounging, and leisure.</p></div>
+      <div class="amen"><div class="amen-icon"><i class="ti ti-flame"></i></div><h3>BBQ / grill area</h3><p>A dedicated outdoor cookout station for unforgettable meals with family or friends.</p></div>
+      <div class="amen"><div class="amen-icon"><i class="ti ti-tools-kitchen-2"></i></div><h3>Fully equipped kitchen</h3><p>Modern kitchen with everything you need, finished in quartz countertops and custom carpentry.</p></div>
+      <div class="amen"><div class="amen-icon"><i class="ti ti-wifi"></i></div><h3>Wi-Fi &amp; workspace</h3><p>High-speed internet and designated workspaces for remote work or business travel.</p></div>
+      <div class="amen"><div class="amen-icon"><i class="ti ti-parking"></i></div><h3>Private, secure parking</h3><p>Ample parking inside the gated estate for up to 3 vehicles.</p></div>
+      <div class="amen"><div class="amen-icon"><i class="ti ti-window"></i></div><h3>Screened windows</h3><p>Large windows with screens (anjeos) in every room — open for a breeze, close for cozy nights.</p></div>
+      <div class="amen"><div class="amen-icon"><i class="ti ti-bed"></i></div><h3>Four private bedrooms</h3><p>Each with a custom-built closet and quality paneled interior doors.</p></div>
+      <div class="amen"><div class="amen-icon"><i class="ti ti-shield-check"></i></div><h3>Monitored security</h3><p>PIR motion sensors and surveillance cameras covering the perimeter and key entry points.</p></div>
+      <div class="amen"><div class="amen-icon"><i class="ti ti-device-tv"></i></div><h3>Samsung tech throughout</h3><p>Modern appliances and electronics across all four levels of the home.</p></div>
     </div>
   </div>
 </section>
