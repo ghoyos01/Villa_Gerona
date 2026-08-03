@@ -195,7 +195,7 @@
   .loc-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;}
   .map-box{
     aspect-ratio:1/1; border:1px solid var(--line); position:relative;
-    background-image:url('images/location-map.jpg'); background-size:cover; background-position:center;
+    background-image:url('images/location-map.png'); background-size:cover; background-position:center;
   }
   .loc-list{list-style:none; margin-top:22px;}
   .loc-list li{padding:14px 0; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; font-size:0.95rem; color:var(--ink);}
