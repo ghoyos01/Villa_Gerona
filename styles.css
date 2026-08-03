@@ -188,7 +188,17 @@
   .photo-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:10px;}
   .photo-grid img{
     width:100%; aspect-ratio:4/3; display:block; border-radius:3px; border:1px solid var(--line);
-    object-fit:contain; background:var(--stone);
+    object-fit:contain; background:var(--stone); cursor:zoom-in; transition:opacity 0.15s;
+  }
+  .photo-grid img:hover{opacity:0.88;}
+  .lightbox-overlay{
+    position:fixed; inset:0; background:rgba(15,20,26,0.9); z-index:200;
+    display:none; align-items:center; justify-content:center; padding:24px; cursor:zoom-out;
+  }
+  .lightbox-overlay.open{display:flex;}
+  .lightbox-overlay img{
+    max-width:92vw; max-height:92vh; object-fit:contain; border-radius:4px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.5); cursor:zoom-out;
   }
   .category-empty{color:rgba(35,48,60,0.5); font-size:0.9rem; font-style:italic;}
 

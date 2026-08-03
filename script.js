@@ -55,3 +55,46 @@ document.addEventListener('DOMContentLoaded', function () {
       console.error('Could not load photos.json', err);
     });
 });
+
+// Lightbox — click any gallery photo to enlarge it over a dark backdrop.
+// Click anywhere outside the photo (or press Escape) to close.
+document.addEventListener('DOMContentLoaded', function () {
+  const overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  overlay.id = 'lightboxOverlay';
+
+  const lightboxImg = document.createElement('img');
+  overlay.appendChild(lightboxImg);
+  document.body.appendChild(overlay);
+
+  function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    overlay.classList.add('open');
+  }
+
+  function closeLightbox() {
+    overlay.classList.remove('open');
+    lightboxImg.src = '';
+  }
+
+  // Event delegation so this works even for photos added dynamically by the gallery loader
+  document.addEventListener('click', function (e) {
+    const img = e.target.closest('.photo-grid img');
+    if (img) {
+      openLightbox(img.src, img.alt);
+    }
+  });
+
+  // Clicking the dark backdrop (anywhere that isn't the enlarged photo itself) closes it
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) {
+      closeLightbox();
+    }
+  });
+  lightboxImg.addEventListener('click', closeLightbox);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+});
