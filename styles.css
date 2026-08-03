@@ -185,9 +185,9 @@
     color:var(--palm-dark); margin-bottom:18px; display:flex; align-items:center; gap:12px;
   }
   .category-title::after{content:""; flex:1; height:1px; background:var(--line);}
-  .photo-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;}
+  .photo-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:10px;}
   .photo-grid img{
-    width:100%; height:auto; display:block; border-radius:3px; border:1px solid var(--line);
+    width:100%; aspect-ratio:4/3; display:block; border-radius:3px; border:1px solid var(--line);
     object-fit:contain; background:var(--stone);
   }
   .category-empty{color:rgba(35,48,60,0.5); font-size:0.9rem; font-style:italic;}
