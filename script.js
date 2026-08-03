@@ -54,8 +54,4 @@ document.addEventListener('DOMContentLoaded', function () {
     .catch(function (err) {
       console.error('Could not load photos.json', err);
     });
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 555ad11cb32293875c84c244deb5c1873fba00c2
