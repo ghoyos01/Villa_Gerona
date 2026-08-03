@@ -195,15 +195,11 @@
   .loc-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;}
   .map-box{
     aspect-ratio:1/1; border:1px solid var(--line); position:relative;
-    background:
-      repeating-linear-gradient(0deg, rgba(111,157,194,0.1) 0 1px, transparent 1px 40px),
-      repeating-linear-gradient(90deg, rgba(111,157,194,0.1) 0 1px, transparent 1px 40px),
-      var(--stone);
+    background-image:url('images/location-map.jpg'); background-size:cover; background-position:center;
   }
-  .pin{position:absolute; top:44%; left:52%; width:14px; height:14px; background:var(--clay); border-radius:50% 50% 50% 0; transform:rotate(-45deg);}
   .loc-list{list-style:none; margin-top:22px;}
-  .loc-list li{padding:14px 0; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; font-size:0.95rem;}
-  .loc-list li span:first-child{color:rgba(35,48,60,0.6);}
+  .loc-list li{padding:14px 0; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; font-size:0.95rem; color:var(--ink);}
+  .loc-list li span:first-child{color:var(--ink);}
 
   .cta{background:var(--ink); color:var(--stone-light); text-align:center;}
   .cta h2{color:var(--stone-light); font-size:clamp(2.1rem,4vw,3.1rem); max-width:680px; margin:0 auto 22px; font-weight:600;}
