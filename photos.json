@@ -1,0 +1,31 @@
+{
+  "master-bedroom": [
+    "master-bedroom-1.jpg",
+    "master-bedroom-2.jpg"
+  ],
+  "master-bathroom": [
+    "master-bath-3.jpg",
+    "master-bath-2.jpg",
+    "master-bath-1.jpg"
+  ],
+  "kitchen": [
+    "kitchen-1.jpg",
+    "kitchen-2.jpg",
+    "kitchen-3.jpg",
+    "kitchen-4.jpg",
+    "kitchen-5.jpg"
+  ],
+  "patio-bbq": [
+    "patio-bbq-1.jpg",
+    "patio-bbq-2.jpg"
+  ],
+  "grounds": [
+    "grounds-terrace.jpg"
+  ],
+  "exterior": [
+    "exterior-house.jpg",
+    "gated-entrance.jpg",
+    "exterior-facade.jpg",
+    "exterior-driveway.jpg"
+  ]
+}

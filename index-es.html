@@ -19,7 +19,10 @@
         <a href="index-es.html" class="lang-flag active" title="Español"><img src="https://flagcdn.com/24x18/es.png" width="24" height="18" alt="ES"></a>
       </div>
     </div>
-    <div class="navlinks">
+    <button class="nav-toggle" id="navToggle" aria-label="Alternar menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="navlinks" id="navLinks">
       <a href="#story">La Casa</a>
       <a href="#amenities">Comodidades</a>
       <a href="#gallery">Galería</a>
@@ -29,6 +32,7 @@
     </div>
   </nav>
 </header>
+<script src="script.js"></script>
 
 <section class="hero">
   <div class="wrap hero-grid">
@@ -112,55 +116,32 @@
 
     <div class="gallery-category">
       <div class="category-title">Habitacion Principal</div>
-      <div class="photo-grid">
-        <img src="images/master-bedroom-1.jpg" alt="Master bedroom">
-        <img src="images/master-bedroom-2.jpg" alt="Master bedroom">
-      </div>
+      <div class="photo-grid" data-category="master-bedroom" data-alt="Habitacion principal"></div>
     </div>
 
     <div class="gallery-category">
       <div class="category-title">Baño Principal</div>
-      <div class="photo-grid">
-        <img src="images/master-bath-3.jpg" alt="Master bathroom vanity">
-        <img src="images/master-bath-2.jpg" alt="Master bathroom shower">
-        <img src="images/master-bath-1.jpg" alt="Master bathroom">
-      </div>
+      <div class="photo-grid" data-category="master-bathroom" data-alt="Bano principal"></div>
     </div>
 
     <div class="gallery-category">
       <div class="category-title">Cocina</div>
-      <div class="photo-grid">
-        <img src="images/kitchen-1.jpg" alt="Kitchen">
-        <img src="images/kitchen-2.jpg" alt="Kitchen">
-        <img src="images/kitchen-3.jpg" alt="Kitchen">
-        <img src="images/kitchen-4.jpg" alt="Kitchen and hallway">
-        <img src="images/kitchen-5.jpg" alt="Kitchen counter and entryway">
-      </div>
+      <div class="photo-grid" data-category="kitchen" data-alt="Cocina"></div>
     </div>
 
     <div class="gallery-category">
       <div class="category-title">Patio y Zona de BBQ</div>
-      <div class="photo-grid">
-        <img src="images/patio-bbq-1.jpg" alt="Patio and BBQ area">
-        <img src="images/patio-bbq-2.jpg" alt="Patio and BBQ area">
-      </div>
+      <div class="photo-grid" data-category="patio-bbq" data-alt="Patio y zona de BBQ"></div>
     </div>
 
     <div class="gallery-category">
       <div class="category-title">Jardines y Terraza</div>
-      <div class="photo-grid">
-        <img src="images/grounds-terrace.jpg" alt="Grounds and terrace">
-      </div>
+      <div class="photo-grid" data-category="grounds" data-alt="Jardines y terraza"></div>
     </div>
 
     <div class="gallery-category">
       <div class="category-title">Exterior y Entrada</div>
-      <div class="photo-grid">
-        <img src="images/exterior-house.jpg" alt="Exterior of the house">
-        <img src="images/gated-entrance.jpg" alt="Gated entrance">
-        <img src="images/exterior-facade.jpg" alt="Exterior facade">
-        <img src="images/exterior-driveway.jpg" alt="Driveway">
-      </div>
+      <div class="photo-grid" data-category="exterior" data-alt="Exterior de la casa"></div>
     </div>
 
   </div>
