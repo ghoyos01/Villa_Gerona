@@ -121,7 +121,7 @@
 
   /* full-bleed hero photo */
   .hero-img-col.gate{
-    position:relative; overflow:hidden; min-height:340px;
+    position:relative; overflow:hidden; min-height:340px; width:90%;
     background-image:url('images/front-of-house-night.jpg'); background-size:cover; background-position:center;
     border:none;
   }
@@ -253,7 +253,7 @@
   @media (max-width: 860px){
     .hero-flex{grid-template-columns:1fr; min-height:auto;}
     .hero-text-col{padding:44px 24px 40px; order:2;}
-    .hero-img-col.gate{min-height:320px; order:1;}
+    .hero-img-col.gate{min-height:320px; order:1; width:100%;}
     .story-grid, .loc-grid, .contact-grid{grid-template-columns:1fr; gap:40px;}
     .stats .wrap{grid-template-columns:repeat(2,1fr);}
     .amen-grid{grid-template-columns:1fr;}
