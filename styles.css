@@ -121,7 +121,8 @@
 
   /* full-bleed hero photo */
   .hero-img-col.gate{
-    position:relative; overflow:hidden; min-height:340px; width:90%;
+    position:relative; overflow:hidden; min-height:340px; width:80%; justify-self:start;
+    margin-top:40px; margin-bottom:40px;
     background-image:url('images/front-of-house-night.jpg'); background-size:cover; background-position:center;
     border:none;
   }
