@@ -33,12 +33,13 @@
   ],
   "dining-room": [],
   "living-room": [
-    "living-room-1.jpg,
+    "living-room.jpg",
     "living-room-2.jpg"
   ],
   "second-bedroom": [],
+  "third-bedroom": [],
   "office": [
-     "office-1.jpg"
+    "office-1.jpg"
   ],
   "laundry-room": []
 }
