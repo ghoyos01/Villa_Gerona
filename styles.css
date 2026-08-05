@@ -246,6 +246,13 @@
   textarea{resize:vertical; min-height:110px;}
   .contact-info .item{margin-bottom:26px;}
   .contact-info .mono{color:var(--clay); display:block; margin-bottom:6px;}
+  .whatsapp-link{
+    display:inline-flex; align-items:center; gap:8px; color:var(--clay-dark);
+    text-decoration:none; font-family:'Cormorant Garamond',serif; font-size:1.15rem; font-weight:500;
+    transition:color 0.2s;
+  }
+  .whatsapp-link i{font-size:1.3rem; color:#25D366;}
+  .whatsapp-link:hover{color:var(--clay);}
   .contact-info .val{font-size:1.15rem; font-family:'Cormorant Garamond',serif; font-weight:500;}
 
   footer{background:var(--palm-dark); color:rgba(234,242,248,0.65); padding:40px 0; font-size:0.85rem;}
