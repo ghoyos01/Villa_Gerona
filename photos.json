@@ -27,12 +27,18 @@
   "exterior": [
     "exterior-house.jpg",
     "gated-entrance.jpg",
+    "gate-entrance-1.jpg",
     "exterior-facade.jpg",
     "exterior-driveway.jpg"
   ],
   "dining-room": [],
-  "living-room": [],
+  "living-room": [
+    "living-room-1.jpg,
+    "living-room-2.jpg"
+  ],
   "second-bedroom": [],
-  "third-bedroom": [],
+  "office": [
+	office-1.jpg"
+  ],
   "laundry-room": []
 }
