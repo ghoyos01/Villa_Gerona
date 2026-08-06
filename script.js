@@ -10,17 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
     toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 
-  // Gallery dropdown: on mobile, tapping "Gallery" expands/collapses the room list
-  // instead of jumping straight to the Gallery section (desktop keeps its hover behavior).
+  // Gallery dropdown: tapping "Gallery" expands/collapses the room list.
+  // (Desktop's hover-to-reveal behavior is separate, pure-CSS, and unaffected by this.)
   const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
   const dropdownMenu = document.querySelector('.nav-dropdown-menu');
   if (dropdownToggle && dropdownMenu) {
     dropdownToggle.addEventListener('click', function (e) {
-      if (window.innerWidth <= 860) {
-        e.preventDefault();
-        dropdownMenu.classList.toggle('open');
-        dropdownToggle.classList.toggle('open');
-      }
+      e.preventDefault();
+      dropdownMenu.classList.toggle('open');
+      dropdownToggle.classList.toggle('open');
     });
   }
 

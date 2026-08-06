@@ -2,6 +2,7 @@
 
 ## Open items
 
+- [ ] **Social media integration** (Instagram, Facebook, and other platforms) — planned for a session. Notes: Gerry has an Instagram account but doesn't use it much; actively uses Facebook. Likely covers: Facebook Page for Villa Gerona, linking social profiles to Google Business Profile and website, posting strategy, cross-linking with Airbnb listing.
 - [ ] Add photos for the remaining empty gallery categories: Dining Room, Second Bedroom, Third Bedroom, Laundry Room
 - [ ] Decide: take site offline via GitHub Pages (Settings → Pages → Source → None) until fully ready, or leave it live as-is?
 - [ ] Website field on Google Business Profile is still "pending" (can take up to 7 days) — no action needed, just check back
@@ -12,7 +13,8 @@
 
 ### Site build
 - [x] Site built and deployed on GitHub Pages, custom domain (villagerona.com) connected
-- [x] Bluish pastel color scheme, mobile hamburger menu, Gallery dropdown with room links
+- [x] Bluish pastel color scheme, mobile hamburger menu
+- [x] Gallery dropdown menu in nav, linking directly to each room — fixed to properly collapse/expand on repeated taps (mobile)
 - [x] Spanish language version with flag switcher, proper accents/ñ throughout
 - [x] Shared stylesheet (styles.css) — style changes apply to both language pages at once
 - [x] Categorized, data-driven photo gallery (photos.json) with click-to-enlarge lightbox
@@ -21,7 +23,7 @@
 - [x] Removed contact form and email entirely — WhatsApp only
 - [x] Cleaned a power line out of the exterior hero photo (image editing)
 
-### SEO (today)
+### SEO
 - [x] Meta description, keywords, Open Graph tags, Twitter Card tags (both languages)
 - [x] hreflang tags linking EN/ES versions, canonical URLs
 - [x] Structured data (Schema.org LodgingBusiness) with address, coordinates, amenities
