@@ -10,12 +10,30 @@ document.addEventListener('DOMContentLoaded', function () {
     toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 
-  // Close the menu after tapping a link
+  // Gallery dropdown: on mobile, tapping "Gallery" expands/collapses the room list
+  // instead of jumping straight to the Gallery section (desktop keeps its hover behavior).
+  const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
+  const dropdownMenu = document.querySelector('.nav-dropdown-menu');
+  if (dropdownToggle && dropdownMenu) {
+    dropdownToggle.addEventListener('click', function (e) {
+      if (window.innerWidth <= 860) {
+        e.preventDefault();
+        dropdownMenu.classList.toggle('open');
+        dropdownToggle.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close the whole mobile menu after tapping any link — except the Gallery
+  // toggle itself, which should only expand/collapse its submenu, not close the nav.
   links.querySelectorAll('a').forEach(function (a) {
+    if (a === dropdownToggle) return;
     a.addEventListener('click', function () {
       links.classList.remove('open');
       toggle.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
+      if (dropdownMenu) dropdownMenu.classList.remove('open');
+      if (dropdownToggle) dropdownToggle.classList.remove('open');
     });
   });
 });

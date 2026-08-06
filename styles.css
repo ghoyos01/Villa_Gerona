@@ -296,10 +296,13 @@
     .nav-cta{margin:8px 28px; width:calc(100% - 56px); justify-content:center;}
     nav.wrap{position:relative;}
     .nav-dropdown-menu{
-      display:block; position:static; box-shadow:none; border:none; border-radius:0;
+      display:none; position:static; box-shadow:none; border:none; border-radius:0;
       background:var(--stone); margin:0 28px 8px; padding:4px;
     }
+    .nav-dropdown-menu.open{display:block;}
     .nav-dropdown-menu a{padding:10px 14px; font-size:0.82rem;}
-    .chevron{display:none;}
+    .chevron{display:inline-block;}
+    .nav-dropdown-toggle{justify-content:space-between; width:100%;}
+    .nav-dropdown-toggle.open .chevron{transform:rotate(180deg);}
   }
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} .btn:hover{transform:none;} }
