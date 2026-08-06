@@ -17,6 +17,10 @@
     "kitchen-4.jpg",
     "kitchen-5.jpg"
   ],
+ "laundry-room": [
+    "laundry-room-1.jpg",
+    "laundry-room-2.jpg"
+  ],
   "patio-bbq": [
     "patio-bbq-1.jpg",
     "patio-bbq-2.jpg"
@@ -43,6 +47,5 @@
   "third-bedroom": [],
   "office": [
     "office-1.jpg"
-  ],
-  "laundry-room": []
+  ]
 }
