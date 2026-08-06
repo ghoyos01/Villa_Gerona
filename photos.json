@@ -31,9 +31,12 @@
     "exterior-facade.jpg",
     "exterior-driveway.jpg"
   ],
-  "dining-room": [],
+  "dining-room": [
+     "dining-room-1.jpg",
+     "dining-room-2.jpg" 	
+  ],
   "living-room": [
-    "living-room.jpg",
+    "living-room-1.jpg",
     "living-room-2.jpg"
   ],
   "second-bedroom": [],
