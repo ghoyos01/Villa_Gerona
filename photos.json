@@ -1,4 +1,27 @@
 {
+  "living-room": [
+    "living-room-1.jpg",
+    "living-room-2.jpg"
+  ],
+  "bedroom-level-1": [
+    "bedroom-level-1-1.jpg",
+    "bedroom-level-1-2.jpg"
+  ],
+  "kitchen": [
+    "kitchen-1.jpg",
+    "kitchen-2.jpg",
+    "kitchen-3.jpg",
+    "kitchen-4.jpg",
+    "kitchen-5.jpg"
+  ],
+  "laundry-room": [
+    "laundry-room-1.jpg",
+    "laundry-room-2.jpg"
+  ],
+  "dining-room": [
+    "dining-room-1.jpg",
+    "dining-room-2.jpg"
+  ],
   "master-bedroom": [
     "master-bedroom-1.jpg",
     "master-bedroom-2.jpg",
@@ -10,17 +33,11 @@
     "master-bath-2.jpg",
     "master-bath-1.jpg"
   ],
-  "kitchen": [
-    "kitchen-1.jpg",
-    "kitchen-2.jpg",
-    "kitchen-3.jpg",
-    "kitchen-4.jpg",
-    "kitchen-5.jpg"
+  "office": [
+    "office-1.jpg"
   ],
- "laundry-room": [
-    "laundry-room-1.jpg",
-    "laundry-room-2.jpg"
-  ],
+  "bedroom-3": [],
+  "bedroom-4": [],
   "patio-bbq": [
     "patio-bbq-1.jpg",
     "patio-bbq-2.jpg"
@@ -34,18 +51,5 @@
     "gate-entrance-1.jpg",
     "exterior-facade.jpg",
     "exterior-driveway.jpg"
-  ],
-  "dining-room": [
-     "dining-room-1.jpg",
-     "dining-room-2.jpg" 	
-  ],
-  "living-room": [
-    "living-room-1.jpg",
-    "living-room-2.jpg"
-  ],
-  "second-bedroom": [],
-  "third-bedroom": [],
-  "office": [
-    "office-1.jpg"
   ]
 }

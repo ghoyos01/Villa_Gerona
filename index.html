@@ -28,6 +28,31 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Karla:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+.level-heading {
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.85rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  color:var(--gold);
+  border-bottom:1px solid var(--line);
+  padding-bottom:10px;
+  margin:56px 0 20px;
+}
+.gallery-category:first-of-type,
+.level-heading:first-of-type { margin-top:0; }
+.dropdown-level-label {
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.68rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  color:var(--gold);
+  opacity:0.75;
+  padding:10px 20px 2px;
+}
+</style>
 
 <script type="application/ld+json">
 {
@@ -88,15 +113,21 @@
       <div class="nav-dropdown">
         <a href="#gallery" class="nav-dropdown-toggle">Gallery <span class="chevron">▾</span></a>
         <div class="nav-dropdown-menu">
+          <div class="dropdown-level-label">Level 1</div>
+          <a href="#gallery-living-room">Living Room</a>
+          <a href="#gallery-bedroom-level-1">Bedroom 1</a>
+          <div class="dropdown-level-label">Level 2</div>
+          <a href="#gallery-kitchen">Kitchen</a>
+          <a href="#gallery-laundry-room">Laundry Room</a>
+          <a href="#gallery-dining-room">Dining Room</a>
+          <div class="dropdown-level-label">Level 3</div>
           <a href="#gallery-master-bedroom">Master Bedroom</a>
           <a href="#gallery-master-bathroom">Master Bathroom</a>
-          <a href="#gallery-kitchen">Kitchen</a>
-          <a href="#gallery-dining-room">Dining Room</a>
-          <a href="#gallery-living-room">Living Room</a>
-          <a href="#gallery-second-bedroom">Second Bedroom</a>
-          <a href="#gallery-third-bedroom">Third Bedroom</a>
           <a href="#gallery-office">Office</a>
-          <a href="#gallery-laundry-room">Laundry Room</a>
+          <div class="dropdown-level-label">Level 4</div>
+          <a href="#gallery-bedroom-3">Bedroom 3</a>
+          <a href="#gallery-bedroom-4">Bedroom 4</a>
+          <div class="dropdown-level-label">Outdoor</div>
           <a href="#gallery-patio-bbq">Patio &amp; BBQ Area</a>
           <a href="#gallery-grounds">Grounds &amp; Terrace</a>
           <a href="#gallery-exterior">Exterior &amp; Entrance</a>
@@ -184,6 +215,37 @@
       <h2>A room-by-room look.</h2>
     </div>
 
+    <div class="level-heading">Level 1</div>
+
+    <div class="gallery-category" id="gallery-living-room">
+      <div class="category-title">Living Room</div>
+      <div class="photo-grid" data-category="living-room" data-alt="Living room"></div>
+    </div>
+
+    <div class="gallery-category" id="gallery-bedroom-level-1">
+      <div class="category-title">Bedroom 1</div>
+      <div class="photo-grid" data-category="bedroom-level-1" data-alt="Bedroom 1"></div>
+    </div>
+
+    <div class="level-heading">Level 2</div>
+
+    <div class="gallery-category" id="gallery-kitchen">
+      <div class="category-title">Kitchen</div>
+      <div class="photo-grid" data-category="kitchen" data-alt="Kitchen"></div>
+    </div>
+
+    <div class="gallery-category" id="gallery-laundry-room">
+      <div class="category-title">Laundry Room</div>
+      <div class="photo-grid" data-category="laundry-room" data-alt="Laundry room"></div>
+    </div>
+
+    <div class="gallery-category" id="gallery-dining-room">
+      <div class="category-title">Dining Room</div>
+      <div class="photo-grid" data-category="dining-room" data-alt="Dining room"></div>
+    </div>
+
+    <div class="level-heading">Level 3</div>
+
     <div class="gallery-category" id="gallery-master-bedroom">
       <div class="category-title">Master Bedroom</div>
       <div class="photo-grid" data-category="master-bedroom" data-alt="Master bedroom"></div>
@@ -194,10 +256,24 @@
       <div class="photo-grid" data-category="master-bathroom" data-alt="Master bathroom"></div>
     </div>
 
-    <div class="gallery-category" id="gallery-kitchen">
-      <div class="category-title">Kitchen</div>
-      <div class="photo-grid" data-category="kitchen" data-alt="Kitchen"></div>
+    <div class="gallery-category" id="gallery-office">
+      <div class="category-title">Office</div>
+      <div class="photo-grid" data-category="office" data-alt="Office"></div>
     </div>
+
+    <div class="level-heading">Level 4</div>
+
+    <div class="gallery-category" id="gallery-bedroom-3">
+      <div class="category-title">Bedroom 3</div>
+      <div class="photo-grid" data-category="bedroom-3" data-alt="Bedroom 3"></div>
+    </div>
+
+    <div class="gallery-category" id="gallery-bedroom-4">
+      <div class="category-title">Bedroom 4</div>
+      <div class="photo-grid" data-category="bedroom-4" data-alt="Bedroom 4"></div>
+    </div>
+
+    <div class="level-heading">Outdoor</div>
 
     <div class="gallery-category" id="gallery-patio-bbq">
       <div class="category-title">Patio &amp; BBQ Area</div>
@@ -212,36 +288,6 @@
     <div class="gallery-category" id="gallery-exterior">
       <div class="category-title">Exterior &amp; Entrance</div>
       <div class="photo-grid" data-category="exterior" data-alt="Exterior of the house"></div>
-    </div>
-
-    <div class="gallery-category" id="gallery-dining-room">
-      <div class="category-title">Dining Room</div>
-      <div class="photo-grid" data-category="dining-room" data-alt="Dining room"></div>
-    </div>
-
-    <div class="gallery-category" id="gallery-living-room">
-      <div class="category-title">Living Room</div>
-      <div class="photo-grid" data-category="living-room" data-alt="Living room"></div>
-    </div>
-
-    <div class="gallery-category" id="gallery-second-bedroom">
-      <div class="category-title">Second Bedroom</div>
-      <div class="photo-grid" data-category="second-bedroom" data-alt="Second bedroom"></div>
-    </div>
-
-    <div class="gallery-category" id="gallery-third-bedroom">
-      <div class="category-title">Third Bedroom</div>
-      <div class="photo-grid" data-category="third-bedroom" data-alt="Third bedroom"></div>
-    </div>
-
-    <div class="gallery-category" id="gallery-laundry-room">
-      <div class="category-title">Laundry Room</div>
-      <div class="photo-grid" data-category="laundry-room" data-alt="Laundry room"></div>
-    </div>
-
-    <div class="gallery-category" id="gallery-office">
-      <div class="category-title">Office</div>
-      <div class="photo-grid" data-category="office" data-alt="Office"></div>
     </div>
 
   </div>
