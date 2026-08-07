@@ -37,7 +37,10 @@
   "office": [
     "office-1.jpg"
   ],
-  "bedroom-3": [],
+  "bedroom-3": [
+    "bedroom-3-1.jpg",
+    "bedroom-3-2.jpg"
+  ],
   "bedroom-4": [],
   "bathroom-3": [],
   "patio-bbq": [
