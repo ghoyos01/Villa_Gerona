@@ -7,13 +7,9 @@
     "bedroom-1-1.jpg",
     "bedroom-1-2.jpg"
   ],
-  "bathroom-level-1": [
+  "bathroom-1": [
     "bathroom-1-1.jpg",
     "bathroom-1-2.jpg"
-  ],
-  "bathroom-level-4": [
-    "bathroom-3-1.jpg",
-    "bathroom-3-2.jpg"
   ],
   "kitchen": [
     "kitchen-1.jpg",
@@ -46,13 +42,16 @@
     "bedroom-3-1.jpg",
     "bedroom-3-2.jpg"
   ],
-   "bedroom-4": [
+  "bedroom-4": [
     "bedroom-4-1.jpg",
     "bedroom-4-2.jpg",
     "bedroom-4-3.jpg",
     "bedroom-4-4.jpg"
   ],
-  "bathroom-3": [],
+  "bathroom-3": [
+    "bathroom-3-1.jpg",
+    "bathroom-3-2.jpg"
+  ],
   "patio-bbq": [
     "patio-bbq-1.jpg",
     "patio-bbq-2.jpg"
