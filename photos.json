@@ -7,6 +7,7 @@
     "bedroom-level-1-1.jpg",
     "bedroom-level-1-2.jpg"
   ],
+  "bathroom-1": [],
   "kitchen": [
     "kitchen-1.jpg",
     "kitchen-2.jpg",
@@ -38,6 +39,7 @@
   ],
   "bedroom-3": [],
   "bedroom-4": [],
+  "bathroom-3": [],
   "patio-bbq": [
     "patio-bbq-1.jpg",
     "patio-bbq-2.jpg"
@@ -51,5 +53,6 @@
     "gate-entrance-1.jpg",
     "exterior-facade.jpg",
     "exterior-driveway.jpg"
-  ]
+  ],
+  "fauna": []
 }
