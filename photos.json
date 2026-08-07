@@ -41,7 +41,12 @@
     "bedroom-3-1.jpg",
     "bedroom-3-2.jpg"
   ],
-  "bedroom-4": [],
+   "bedroom-4": [
+    "bedroom-4-1.jpg",
+    "bedroom-4-2.jpg",
+    "bedroom-4-3.jpg",
+    "bedroom-4-4.jpg"
+  ],
   "bathroom-3": [],
   "patio-bbq": [
     "patio-bbq-1.jpg",
