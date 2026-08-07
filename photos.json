@@ -7,7 +7,14 @@
     "bedroom-level-1-1.jpg",
     "bedroom-level-1-2.jpg"
   ],
-  "bathroom-1": [],
+  "bathroom-level-1": [
+    "bathroom-1-1.jpg",
+    "bathroom-1-2.jpg"
+  ],
+  "bathroom-level-4": [
+    "bathroom-3-1.jpg",
+    "bathroom-3-2.jpg"
+  ],
   "kitchen": [
     "kitchen-1.jpg",
     "kitchen-2.jpg",
