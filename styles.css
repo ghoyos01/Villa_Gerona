@@ -197,6 +197,15 @@
   }
   .badge .dot{width:6px; height:6px; border-radius:50%; background:var(--gold);}
 
+  #amenities{
+    position:relative;
+    background:
+      linear-gradient(rgba(248,250,252,0.93), rgba(248,250,252,0.93)),
+      url('images/grounds-terrace.jpg') center/cover no-repeat;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+
   .amen-category{margin-bottom:44px;}
   .amen-category:last-child{margin-bottom:0;}
   .amen-category-label{
