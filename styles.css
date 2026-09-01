@@ -222,7 +222,7 @@
   }
   .amen-icon i{font-size:18px; color:var(--palm-dark);}
   .amen-row h3{font-family:'Cormorant Garamond', serif; font-weight:700; font-size:1.4rem; color:var(--ink); margin-bottom:5px;}
-  .amen-row p{color:var(--ink); font-size:1.02rem; font-weight:500; line-height:1.65;}
+  .amen-row p{color:var(--ink); font-size:1.02rem; font-weight:600; line-height:1.65;}
 
   /* Categorized gallery */
   .gallery-category{margin-bottom:56px; scroll-margin-top:100px;}
